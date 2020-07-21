@@ -10,9 +10,9 @@ TinyGPSPlus gps;  // The TinyGPS++ object
 
 
 SoftwareSerial ss(4, 5); 
-const char* ssid = "Shastry"; 
-const char* password = "9480761391"; 
-char server[] = "192.168.0.105";
+const char* ssid = "YOUR_SSID"; 
+const char* password = "PASSKEY"; 
+char server[] = "HOST_IP";
 float latitude , longitude;
 String  lat_str , lng_str;
 //WiFiServer server(80);
@@ -72,7 +72,7 @@ void loop()
     client.print(" ");      
     client.print("HTTP/1.1");
     client.println();
-    client.println("Host: 192.168.0.105");
+    client.println("Host: IP_OF_HOST");
     client.println("Connection: close");
     client.println();
   } else {
