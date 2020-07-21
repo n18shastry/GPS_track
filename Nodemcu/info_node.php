@@ -1,7 +1,7 @@
 <?php
    
-    $dbusername = "owner";  
-    $dbpassword = "findmyloc123";  
+    $dbusername = "USERNAME";  
+    $dbpassword = "PASSWORD";  
     $server = "localhost"; 
   
     $dbconnect = mysqli_connect($server, $dbusername, $dbpassword);
